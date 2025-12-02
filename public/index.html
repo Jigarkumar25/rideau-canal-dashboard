@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rideau Canal Skateway – Monitoring Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <h1>Rideau Canal Skateway – Monitoring Dashboard</h1>
+        <p>Live and recent ice conditions from simulated sensors.</p>
+        <button id="refresh-btn" type="button">Refresh data</button>
+        <span id="status" class="status"></span>
+      </header>
+
+      <section class="cards" aria-label="Location summary">
+        <div class="card">
+          <h2>Dows Lake</h2>
+          <p class="summary" id="summary-dows">No data yet.</p>
+        </div>
+        <div class="card">
+          <h2>Fifth Avenue</h2>
+          <p class="summary" id="summary-fifth">No data yet.</p>
+        </div>
+        <div class="card">
+          <h2>NAC</h2>
+          <p class="summary" id="summary-nac">No data yet.</p>
+        </div>
+      </section>
+
+      <section class="table-section" aria-label="Detailed readings">
+        <h2>Recent Aggregated Readings</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Window End (UTC)</th>
+              <th>Avg Ice (cm)</th>
+              <th>Min Ice</th>
+              <th>Max Ice</th>
+              <th>Avg Surface Temp (°C)</th>
+              <th>Max Snow (cm)</th>
+              <th>Avg External Temp (°C)</th>
+              <th>Safety</th>
+            </tr>
+          </thead>
+          <tbody id="readings-body">
+            <tr>
+              <td colspan="9">Loading data…</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
