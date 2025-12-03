@@ -44,7 +44,7 @@ The dashboard helps users:
 
 ## Prerequisites
 
-Before running the dashboard, ensure you have:
+Before running the dashboard, ensure we have:
 
 - Node.js installed  
 - An active Azure Cosmos DB account  
@@ -68,8 +68,8 @@ npm install
 ## Configuration
 Create a .env file in the root directory and add the following values:
 ```bash
-COSMOS_ENDPOINT=your-cosmos-endpoint
-COSMOS_KEY=your-cosmos-key
+COSMOS_ENDPOINT=cosmos-endpoint
+COSMOS_KEY=cosmos-key
 COSMOS_DATABASE=RideauCanalDB
 COSMOS_CONTAINER=SensorAggregations
 PORT=3000
@@ -156,7 +156,7 @@ In **App Service → Configuration → Application Settings**, add:
 - COSMOS_CONTAINER  
 - PORT  
 
-These values should match your local `.env` file.
+These values should match  local `.env` file.
 
 ---
 
