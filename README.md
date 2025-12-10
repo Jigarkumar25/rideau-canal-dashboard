@@ -146,7 +146,7 @@ Example Response:
 
 ---
 
-## Configuration Settings in Azure
+### Configuration Settings in Azure
 
 In **App Service → Configuration → Application Settings**, add:
 
@@ -160,7 +160,7 @@ These values should match  local `.env` file.
 
 ---
 
-## Dashboard Features (Detailed)
+## Dashboard Features 
 
 ### Real-time Updates
 The dashboard automatically refreshes data from Cosmos DB without requiring manual reload.
@@ -209,7 +209,7 @@ Each location is labeled as **Safe**, **Caution**, or **Unsafe** based on real-t
 
 ## AI Tools Disclosure
 
-ChatGPT was used for documentation wording and minor debugging guidance.  
+ChatGPT was used for documentation wording,code guidance and minor debugging guidance.  
 All dashboard coding, Azure configuration, testing, and deployment were completed manually by me.
 
 ---
